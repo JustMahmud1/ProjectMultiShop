@@ -1,10 +1,18 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using ProjectMultiShop.Context;
+
+var builder = WebApplication.CreateBuilder();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
+
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
@@ -14,8 +22,19 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+    );
+
+    endpoints.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+
+
 
 app.Run();

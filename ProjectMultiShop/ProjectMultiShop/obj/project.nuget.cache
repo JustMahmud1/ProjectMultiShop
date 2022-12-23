@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XRxjo3jKeA0m/he6DaaIZVLmJlbZnopc0PHIwKnDM92lp4ybRYgmF59QB2OWvLOSeudGYKEh4Tt3fgB/y8MIPg==",
+  "dgSpecHash": "O4YvmTv0wR8Ue/MeyW1ZT9DYpC+TBCB9tk0mF+eZe7zZIatsiBdCnyHVtt9mCbPEv0lil59TVfw0blEyLkvWIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
+  "projectFilePath": "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mahmud\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mahmud\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

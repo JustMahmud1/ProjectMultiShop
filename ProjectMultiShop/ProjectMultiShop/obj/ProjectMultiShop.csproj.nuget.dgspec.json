@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj": {}
+    "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj": {
+    "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
+        "projectUniqueName": "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
         "projectName": "ProjectMultiShop",
-        "projectPath": "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
+        "projectPath": "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\ProjectMultiShop.csproj",
         "packagesPath": "C:\\Users\\Mahmud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahmud\\source\\repos\\ProjectMultiShop\\ProjectMultiShop\\obj\\",
+        "outputPath": "C:\\Users\\Mahmud\\Desktop\\MultiShop\\ProjectMultiShop\\ProjectMultiShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
