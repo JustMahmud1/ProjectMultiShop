@@ -1,24 +1,25 @@
-﻿@model Category
+﻿
+
+@model Category
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update";
 }
 
 <div class="col-md-6 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">Create category</h4>
-            <form class="forms-sample" action="create" method="post">
+            <form class="forms-sample" action="Update" method="post">
                 <div class="form-group">
                     <label asp-for="Name"></label>
                     <input asp-for="Name" class="form-control" placeholder="Name">
-                </div>
-                <div class="form-group">
                     <label asp-for="ImgPath"></label>
                     <input asp-for="ImgPath" class="form-control" placeholder="Image Path">
                 </div>
-                <button type="submit" class="btn btn-outline-info btn-sm">Submit</button>
-                <a type="button" class="btn btn-outline-danger btn-sm" asp-controller="Category" asp-action="Index">Cancel</a>
+                <button type="submit" class="btn btn-outline-info btn-sm">Submit changes</button>
+                <a type="button" class="btn btn-outline-danger btn-sm" asp-controller="Dashboard" asp-action="Index">Cancel</a>
             </form>
         </div>
     </div>
 </div>
+

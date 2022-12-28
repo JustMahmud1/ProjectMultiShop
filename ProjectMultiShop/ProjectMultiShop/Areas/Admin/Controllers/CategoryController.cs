@@ -4,7 +4,7 @@ using ProjectMultiShop.Models;
 
 namespace ProjectMultiShop.Areas.Admin.Controllers
 {
-        [Area("Admin")]
+    [Area("Admin")]
     public class CategoryController : Controller
     {
 
@@ -17,11 +17,11 @@ namespace ProjectMultiShop.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Category> categories=_context.Categories.ToList();
+            List<Category> categories = _context.Categories.ToList();
             return View(categories);
         }
 
-        public IActionResult Create( )
+        public IActionResult Create()
         {
 
             return View();
@@ -34,10 +34,27 @@ namespace ProjectMultiShop.Areas.Admin.Controllers
             {
                 return View(category);
             }
-            
+
             _context.Categories.Add(category);
             _context.SaveChanges();
-            return View(category);
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        public IActionResult Update(int Id)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Update(int Id, Category category)
+        {
+            Category newcategory = _context.Categories.Find(category.Id);
+            newcategory.Name = category.Name;
+            newcategory.ImgPath = category.ImgPath;
+            _context.Categories.Update(newcategory);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
 
 

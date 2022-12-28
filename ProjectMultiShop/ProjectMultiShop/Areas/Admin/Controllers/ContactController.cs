@@ -2,8 +2,9 @@
 using ProjectMultiShop.Context;
 using ProjectMultiShop.Models;
 
-namespace ProjectMultiShop.Controllers
+namespace ProjectMultiShop.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ContactController : Controller
     {
         private readonly AppDbContext _context;
@@ -14,13 +15,15 @@ namespace ProjectMultiShop.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<Contact> contacts = _context.Contacts.ToList();
+            return View(contacts);
         }
 
-        [HttpPost]
-        public IActionResult Index(Contact contact)
+        
+        public IActionResult Delete(int Id)
         {
-            _context.Contacts.Add(contact);
+            Contact contact = _context.Contacts.Find(Id);
+            _context.Contacts.Remove(contact);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
